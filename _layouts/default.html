@@ -3,12 +3,48 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta
+      property="og:description"
+      content="{{ page.excerpt | strip_html | truncatewords: 20 | default: site.description }}"
+    />
+    <meta
+      property="og:image"
+      content="{{ site.url }}/assets/images/og-image.jpg"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="{{ page.title | default: site.title }}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.excerpt | strip_html | truncatewords: 20 | default: site.description }}"
+    />
+    <meta
+      name="twitter:image"
+      content="{{ site.url }}/assets/images/og-image.jpg"
+    />
+    {% if site.twitter_username %}
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+    {% endif %}
+
     <title>{{ page.title | default: site.title }}</title>
     <link
       rel="stylesheet"
       href="{{ '/assets/css/style.css' | relative_url }}"
     />
   </head>
+
   <body>
     {% include header.html %}
 
