@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="header-container">
+    <a class="logo" href="{{ '/' | relative_url }}"> J-Sherlock Portfolio </a>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      type="button"
+      aria-controls="site-navigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="site-navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
