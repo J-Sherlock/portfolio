@@ -1,0 +1,172 @@
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.about-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+
+  h1 {
+    margin: 0 0 0.75rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+.intro-text {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ecf0f1;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+    color: #2c3e50;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    color: #34495e;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: #34495e;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Skills Grid
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.skill-category {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.education-item {
+  margin: 1rem 0;
+}
+
+.degree,
+.school {
+  margin: 0;
+}
+
+.degree {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.school {
+  color: #4b5563;
+  margin-top: 0.25rem;
+}
+
+// Call to Action Section
+.about-cta {
+  background: linear-gradient(135deg, #ecf0f1 0%, #ffffff 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+
+  h2 {
+    color: #2c3e50;
+  }
+
+  p {
+    color: #34495e;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .about-page {
+    padding: 2rem 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
