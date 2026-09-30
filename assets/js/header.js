@@ -3,8 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector("nav");
 
   hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("active");
+    const isOpen = hamburger.classList.toggle("active");
+
     nav.classList.toggle("active");
+    hamburger.setAttribute("aria-expanded", String(isOpen));
   });
 
   // Close menu when a link is clicked
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       hamburger.classList.remove("active");
       nav.classList.remove("active");
+      hamburger.setAttribute("aria-expanded", "false");
     });
   });
 });
