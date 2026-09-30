@@ -11,3 +11,11 @@ body {
 main {
   flex: 1;
 }
+
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}

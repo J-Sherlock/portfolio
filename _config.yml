@@ -28,6 +28,7 @@ baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "https://j-sherlock.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: JackSherlolv
 github_username: J-Sherlock
+forminit_ID: nsbm6r42hdg
 
 # Build settings
 theme: minima
