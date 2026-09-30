@@ -10,6 +10,16 @@ permalink: /about/
     <p class="intro-text">
       Software engineer with a passion for game development and creating elegant solutions.
     </p>
+
+    <div class="profile-image">
+      <img
+        src="{{ '/assets/images/profile.jpg' | relative_url }}"
+        alt="Jack Sherlock profile photo"
+        width="150"
+        height="150"
+      >
+    </div>
+
   </div>
 
   <div class="about-content">
@@ -29,7 +39,7 @@ permalink: /about/
 
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Languages</h3>
+          <h3>🔤 Languages</h3>
           <ul>
             <li>JavaScript / TypeScript</li>
             <li>HTML5</li>
@@ -44,7 +54,7 @@ permalink: /about/
         </div>
 
         <div class="skill-category">
-          <h3>Frameworks & Tools</h3>
+          <h3>⚙️ Frameworks & Tools</h3>
           <ul>
             <li>React Native</li>
             <li>Unity</li>
@@ -60,7 +70,7 @@ permalink: /about/
         </div>
 
         <div class="skill-category">
-          <h3>Other</h3>
+          <h3>🎯 Other Skills</h3>
           <ul>
             <li>Web Development</li>
             <li>Game Development</li>
@@ -71,11 +81,71 @@ permalink: /about/
     </section>
 
     <section class="about-section">
-      <h2>Background</h2>
+      <h2>Background & Education</h2>
       <div class="education-item">
-        <p class="degree">Bachelor of Science — Computer Science</p>
+        <div class="education-header">
+          <p class="degree">Bachelor of Science — Computer Science</p>
+          <p class="graduation-year">Graduated: December 2023</p>
+        </div>
         <p class="school">California State University Channel Islands</p>
+        <p class="education-description">
+          Completed coursework in software engineering, algorithms, data structures,
+          and web development.
+        </p>
+        <p>Starfighter Galaxy - Unity/C#</p>
+        <p>Four-Person Development Team | Agile/Scrum</p>
+        <ul>
+            <li>Collaborated with a four-person team to develop a Unity game in C#.</li>
+            <li>Implemented level progression, scene transitions, and gameplay-state flow.</li>
+            <li>Developed main menu, Level Select, Options, and supporting UI systems.</li>
+            <li>Implemented persistent Save/Load functionality and player settings.</li>
+            <li>Integrated UI, progression, and persistence systems with teammates' gameplay features.</li>
+        </ul>
+
+        <p>Wizard Tower Game - Unity/C#</p>
+        <p>Computer Science Capstone</p>
+
+        <ul>
+            <li>Designed and developed an original 2D Unity game independently using C#.</li>
+            <li>Programmed gameplay systems, player interactions, and UI.</li>
+            <li>Created some original pixel art assets and animations.</li>
+        </ul>
+
+        <p>Coffee Mobile Application — React Native</p>
+        <p>Three-Person Development Team</p>
+
+        <ul>
+            <li>Worked in a team of three to develop a mobile application with responsive UI, navigation, persistent settings, and modular code organization.</li>
+        </ul>
+
       </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Software Development intern</h3>
+        <p class="company-info">The Final Code • 07/01/2025 – 07/01/2026</p>
+        <p>Contributed to production web applications, internal tools, and modernization projects<br> while collaborating with professional developers.</p>
+        <ul>
+            <li>Modernized legacy ASP.NET applications by migrating .NET Framework code to modern .NET and updating legacy architectural patterns.</li>
+            <li>Implemented and updated REST API endpoints and integrated Entity Framework Core, AutoMapper, authentication libraries, and dependency injection.</li>
+            <li>Configured development environments using Visual Studio, npm, GitLab, and PostgreSQL; debugged authentication, database, dependency, and runtime issues.</li>
+            <li>Designed and developed a Chrome Extension to automate technical SEO analysis, including metadata, headers, tracking tags, canonical URLs, CMS identification, links, and image validation.</li>
+            <li>Built reusable HTML/CSS/JavaScript components including parallax effects, logo sliders, before/after comparisons, animated counters, and responsive UI elements.</li>
+            <li>Performed technical SEO audits and production QA, identifying usability, responsive-layout, redirect, broken-link, search, and browser-compatibility issues.</li>
+            <li>Documented defects, reproduced issues, and communicated findings to development staff.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Notable Interests</h2>
+      <ul class="highlights-list">
+        <li><strong>Game Development:</strong> Interested in game design and mechanics using Unity</li>
+        <li><strong>Web Development:</strong> Building responsive, accessible web experiences</li>
+        <li><strong>Trading Card Games:</strong> Competitive TCG player and collector</li>
+      </ul>
     </section>
 
     <section class="about-section about-cta">
