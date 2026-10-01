@@ -27,3 +27,46 @@ $mobile: 768px;
     @content;
   }
 }
+
+// Reusable card component styling
+@mixin card {
+  padding: 1.5rem;
+  background: $white;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+  transition: all $transition-normal;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+    transform: translateY(-2px);
+  }
+}
+
+// Reusable section header
+@mixin section-heading {
+  margin: 0 0 1.5rem;
+  color: $primary-color;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+// Reusable container
+@mixin page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  @include mobile {
+    padding: 2rem 1rem;
+  }
+}
+
+// Reusable grid layout
+@mixin card-grid($min-width: 250px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}

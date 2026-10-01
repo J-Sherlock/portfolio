@@ -1,7 +1,5 @@
 .about-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
+  @include page-container;
 }
 
 .about-header {
@@ -52,12 +50,8 @@
   }
 
   h2 {
-    margin: 0 0 1.5rem;
-    color: $primary-color;
-    font-size: 1.8rem;
-    font-weight: 700;
+    @include section-heading;
     position: relative;
-    padding-bottom: 0.5rem;
   }
 
   p {
@@ -74,24 +68,11 @@
 
 // Skills Grid
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 1.5rem;
+  @include card-grid(250px);
 }
 
 .skill-category {
-  padding: 1.5rem;
-  background: $white;
-  border: 1px solid $light-gray;
-  border-radius: 8px;
-  box-shadow: $shadow-sm;
-  transition: all $transition-normal;
-
-  &:hover {
-    box-shadow: $shadow-lg;
-    transform: translateY(-2px);
-  }
+  @include card;
 
   h3 {
     margin: 0 0 1rem;
@@ -202,17 +183,7 @@
 }
 
 .project-card {
-  padding: 1.5rem;
-  background: $white;
-  border: 1px solid $light-gray;
-  border-radius: 8px;
-  box-shadow: $shadow-sm;
-  transition: all $transition-normal;
-
-  &:hover {
-    box-shadow: $shadow-lg;
-    transform: translateY(-2px);
-  }
+  @include card;
 
   h3 {
     margin: 0 0 0.5rem;
