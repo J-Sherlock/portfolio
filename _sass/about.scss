@@ -11,7 +11,7 @@
 
   h1 {
     margin: 0 0 0.75rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-size: 2.5rem;
     line-height: 1.2;
   }
@@ -19,7 +19,7 @@
 
 .intro-text {
   margin: 0;
-  color: #7f8c8d;
+  color: $text-muted;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -31,7 +31,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #3498db;
+    border: 4px solid $secondary-color;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
@@ -45,7 +45,7 @@
 .about-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid $light-gray;
 
   &:last-child {
     border-bottom: none;
@@ -53,7 +53,7 @@
 
   h2 {
     margin: 0 0 1.5rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-size: 1.8rem;
     font-weight: 700;
     position: relative;
@@ -62,7 +62,7 @@
 
   p {
     margin: 0 0 1rem;
-    color: #34495e;
+    color: $text-dark;
     font-size: 1rem;
     line-height: 1.8;
 
@@ -82,20 +82,20 @@
 
 .skill-category {
   padding: 1.5rem;
-  background: #ffffff;
-  border: 1px solid #ecf0f1;
+  background: $white;
+  border: 1px solid $light-gray;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: $shadow-sm;
+  transition: all $transition-normal;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow-lg;
     transform: translateY(-2px);
   }
 
   h3 {
     margin: 0 0 1rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-size: 1.1rem;
   }
 
@@ -105,7 +105,7 @@
   }
 
   li {
-    color: #7f8c8d;
+    color: $text-muted;
     margin-bottom: 0.5rem;
   }
 }
@@ -113,8 +113,8 @@
 .education-item {
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: #f8fafb;
-  border-left: 4px solid #3498db;
+  background: $light-bg;
+  border-left: 4px solid $secondary-color;
   border-radius: 4px;
 }
 
@@ -124,26 +124,26 @@
 
 .degree {
   font-weight: 700;
-  color: #2c3e50;
+  color: $primary-color;
   font-size: 1.1rem;
   margin: 0;
 }
 
 .graduation-year {
-  color: #3498db;
+  color: $secondary-color;
   font-weight: 600;
   font-size: 0.95rem;
   margin: 0.25rem 0 0;
 }
 
 .school {
-  color: #34495e;
+  color: $text-dark;
   font-size: 1rem;
   margin: 0.5rem 0 0;
 }
 
 .education-description {
-  color: #7f8c8d;
+  color: $text-muted;
   font-size: 0.95rem;
   margin: 0.75rem 0 0;
   line-height: 1.6;
@@ -159,14 +159,14 @@
 
   li {
     padding: 1rem;
-    background: #ffffff;
-    border-left: 3px solid #3498db;
+    background: $white;
+    border-left: 3px solid $secondary-color;
     border-radius: 4px;
-    color: #34495e;
+    color: $text-dark;
     line-height: 1.6;
 
     strong {
-      color: #2c3e50;
+      color: $primary-color;
       display: block;
       margin-bottom: 0.25rem;
     }
@@ -176,7 +176,7 @@
 .experience-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid $light-gray;
 
   &:last-child {
     border-bottom: none;
@@ -184,48 +184,87 @@
 
   h3 {
     margin: 0 0 0.25rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-size: 1.2rem;
   }
 
   .company-info {
-    color: #3498db;
+    color: $secondary-color;
     font-weight: 600;
     font-size: 0.95rem;
     margin: 0 0 0.75rem;
   }
 
   p {
-    color: #34495e;
+    color: $text-dark;
     line-height: 1.6;
+  }
+}
+
+.project-card {
+  padding: 1.5rem;
+  background: $white;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+  transition: all $transition-normal;
+
+  &:hover {
+    box-shadow: $shadow-lg;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    color: $primary-color;
+    font-size: 1.2rem;
+  }
+
+  .project-meta {
+    margin: 0 0 1rem;
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: $text-dark;
+    line-height: 1.6;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
   }
 }
 
 // Call to Action Section
 .about-cta {
-  background: linear-gradient(135deg, #ecf0f1 0%, #ffffff 100%);
+  background: linear-gradient(135deg, $light-bg 0%, $white 100%);
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
   border: none;
 
   h2 {
-    color: #2c3e50;
+    color: $primary-color;
   }
 
   p {
-    color: #34495e;
+    color: $text-dark;
     margin-bottom: 0;
   }
 
   a {
-    color: #3498db;
+    color: $secondary-color;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.2s ease;
+    transition: color $transition-fast;
 
     &:hover {
-      color: #2980b9;
+      color: $secondary-dark;
       text-decoration: underline;
     }
   }
@@ -234,16 +273,16 @@
 .cta-button {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background: #3498db;
-  color: white;
+  background: $secondary-color;
+  color: $white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all $transition-normal;
   margin-top: 1rem;
 
   &:hover {
-    background: #2980b9;
+    background: $secondary-dark;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
   }
@@ -255,7 +294,7 @@
 }
 
 // Responsive Design
-@media (max-width: 768px) {
+@include mobile {
   .about-page {
     padding: 2rem 1rem;
   }

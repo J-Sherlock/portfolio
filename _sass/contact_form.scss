@@ -11,13 +11,13 @@
 
   h1 {
     margin: 0 0 0.75rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-size: 2.5rem;
   }
 
   p {
     margin: 0;
-    color: #7f8c8d;
+    color: $text-muted;
     font-size: 1.1rem;
     line-height: 1.6;
   }
@@ -27,10 +27,10 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  background: #ffffff;
-  border: 1px solid #ecf0f1;
+  background: $white;
+  border: 1px solid $light-gray;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: $shadow-md;
 }
 
 .form-field {
@@ -39,7 +39,7 @@
   label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: $primary-color;
     font-weight: 600;
   }
 
@@ -50,12 +50,12 @@
     padding: 0.75rem;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
-    background: #ffffff;
-    color: #2c3e50;
+    background: $white;
+    color: $primary-color;
     font: inherit;
     transition:
-      border-color 0.2s ease,
-      box-shadow 0.2s ease;
+      border-color $transition-fast,
+      box-shadow $transition-fast;
   }
 
   textarea {
@@ -66,7 +66,7 @@
   input:focus,
   textarea:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: $secondary-color;
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
   }
 }
@@ -74,21 +74,21 @@
 button[type="submit"] {
   width: 100%;
   padding: 0.8rem 1.25rem;
-  border: 2px solid #3498db;
+  border: 2px solid $secondary-color;
   border-radius: 5px;
-  background: #3498db;
-  color: #ffffff;
+  background: $secondary-color;
+  color: $white;
   font: inherit;
   font-weight: 600;
   cursor: pointer;
   transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    background-color $transition-fast,
+    border-color $transition-fast,
+    transform $transition-fast;
 
   &:hover {
-    border-color: #2980b9;
-    background: #2980b9;
+    border-color: $secondary-dark;
+    background: $secondary-dark;
     transform: translateY(-1px);
   }
 
@@ -107,12 +107,12 @@ button[type="submit"]:disabled {
 
 .form-note {
   margin: 1.25rem 0 0;
-  color: #7f8c8d;
+  color: $text-muted;
   font-size: 0.95rem;
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@include mobile {
   .contact-page {
     padding: 2rem 1rem 3rem;
   }

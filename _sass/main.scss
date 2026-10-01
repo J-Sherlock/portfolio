@@ -1,3 +1,4 @@
+@import "variables";
 @import "header";
 @import "footer";
 @import "blog";
@@ -19,8 +20,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background: #f7f9fa;
-  color: #34495e;
+  background: $page-bg;
+  color: $text-dark;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
 }
