@@ -23,30 +23,27 @@ permalink: /about/
   </div>
 
   <div class="about-content">
-    <section class="about-section">
-      <h2>Who I Am</h2>
+    <section class="about-section" aria-labelledby="about-introduction">
+      <h2 id="about-introduction">Who I Am</h2>
       <p>
         I'm Jack Sherlock, a software engineer based in Ventura, California.
-        I specialize in web development and have a deep interest in game development.
+        I have a deep interest in game development.
       </p>
       <p>
         When I'm not coding, you can find me reading or playing Trading Card Games.
       </p>
     </section>
 
-    <section class="about-section">
-      <h2>Skills & Technologies</h2>
+    <section class="about-section" aria-labelledby="skills-technologies-section">
+      <h2 id="skills-technologies-section">Skills & Technologies</h2>
 
       <div class="skills-grid">
         <div class="skill-category">
           <h3>🔤 Languages</h3>
           <ul>
             <li>JavaScript / TypeScript</li>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
+            <li>HTML5 & CSS</li>
+            <li>C, C++, C#</li>
             <li>Java</li>
             <li>Python</li>
             <li>SQL</li>
@@ -60,9 +57,7 @@ permalink: /about/
             <li>Unity</li>
             <li>Jekyll</li>
             <li>.NET</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
+            <li>Git & GitHub</li>
             <li>Node.js</li>
             <li>VS Code</li>
             <li>RESTful APIs</li>
@@ -80,8 +75,8 @@ permalink: /about/
       </div>
     </section>
 
-    <section class="about-section">
-      <h2>Background & Education</h2>
+    <section class="about-section" aria-labelledby="background-education-section">
+      <h2 id="background-education-section">Background & Education</h2>
       <div class="education-item">
         <div class="education-header">
           <p class="degree">Bachelor of Science — Computer Science</p>
@@ -95,8 +90,8 @@ permalink: /about/
       </div>
     </section>
 
-    <section class="about-section">
-      <h2>Notable Projects</h2>
+    <section class="about-section" aria-labelledby="notable-projects-section">
+      <h2 id="notable-projects-section">Notable Projects</h2>
 
       <div class="projects-list">
         <div class="project-card">
@@ -131,8 +126,8 @@ permalink: /about/
       </div>
     </section>
 
-    <section class="about-section">
-      <h2>Experience</h2>
+    <section class="about-section" aria-labelledby="experience-section">
+      <h2 id="experience-section">Experience</h2>
       <div class="experience-item">
         <h3>Software Development Intern</h3>
         <p class="company-info">The Final Code • July 2025 – July 2026</p>
@@ -149,8 +144,8 @@ permalink: /about/
       </div>
     </section>
 
-    <section class="about-section">
-      <h2>Notable Interests</h2>
+    <section class="about-section" aria-labelledby="notable-interests-section">
+      <h2 id="notable-interests-section">Notable Interests</h2>
       <ul class="highlights-list">
         <li><strong>Game Development:</strong> Interested in game design and mechanics using Unity</li>
         <li><strong>Web Development:</strong> Building responsive, accessible web experiences</li>
@@ -158,8 +153,8 @@ permalink: /about/
       </ul>
     </section>
 
-    <section class="about-section about-cta">
-      <h2>Let's Connect</h2>
+    <section class="about-section about-cta" aria-labelledby="contact-link-section">
+      <h2 id="contact-link-section">Let's Connect</h2>
       <p>
         Interested in collaborating or learning more?
         <a href="{{ '/contact/' | relative_url }}">Get in touch!</a>

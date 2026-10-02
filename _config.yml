@@ -29,6 +29,15 @@ url: "https://j-sherlock.github.io" # the base hostname & protocol for your site
 twitter_username: JackSherlolv
 github_username: J-Sherlock
 forminit_ID: nsbm6r42hdg
+collections:
+  personal-projects:
+    output: true
+    permalink: /projects/:name/
+
+collections:
+  professional-projects:
+    output: true
+    permalink: /projects/:name/
 
 # Build settings
 theme: minima
