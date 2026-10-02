@@ -1,0 +1,46 @@
+{% assign project = include.project %}
+<article class="project-card">
+  <a
+    class="project-card__media"
+    href="{{ project.url | relative_url }}"
+    tabindex="-1"
+  >
+    <img
+      src="{{ project.image | relative_url }}"
+      alt="{{ project.imageAlt }}"
+      loading="lazy"
+    />
+  </a>
+
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      {% if project.year %}<span class="project-card__year"
+        >{{ project.year }}</span
+      >{% endif %} {% if project.category %}<span class="project-card__category"
+        >{{ project.category }}</span
+      >{% endif %}
+    </div>
+
+    <h2 class="project-card__title">
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    </h2>
+
+    {% if project.company %}
+    <p class="project-card__company">{{ project.company }}</p>
+    {% endif %}
+    <p class="project-card__description">{{ project.description }}</p>
+
+    {% if project.tech %}
+    <ul class="project-card__tech">
+      {% for item in project.tech %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% if project.blurb %}
+    <p class="project-card__blurb">{{ project.blurb }}</p>
+    {% endif %}
+    <a class="read-more" href="{{ project.url | relative_url }}"
+      >View project</a
+    >
+  </div>
+</article>

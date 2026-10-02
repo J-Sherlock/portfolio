@@ -1,0 +1,133 @@
+.projects-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  @include mobile {
+    padding: 2rem 1rem;
+  }
+}
+
+.projects-page__header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0 0 0.5rem;
+    color: $primary-color;
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin: 0;
+    color: $text-muted;
+    font-size: 1.1rem;
+  }
+}
+
+.projects-grid {
+  @include card-grid(300px);
+  // auto-fill keeps a lone card from stretching across the whole row
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-card {
+  @include card;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__media {
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.6rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.project-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-card__year {
+  color: $secondary-color;
+}
+
+.project-card__category {
+  padding: 0.1rem 0.6rem;
+  background: $light-gray;
+  color: $primary-color;
+  border-radius: 20px;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.4rem;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.project-card__company {
+  margin: 0;
+  color: $text-muted;
+  font-size: 0.9rem;
+}
+
+.project-card__description {
+  margin: 0;
+  color: $text-dark;
+  font-weight: 500;
+}
+
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.2rem 0.6rem;
+    background: $light-bg;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    color: $text-dark;
+    font-size: 0.8rem;
+  }
+}
+
+.project-card__blurb {
+  margin: 0;
+  color: $text-muted;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-card .read-more {
+  margin-top: auto; // pins the link to the bottom so cards line up
+}
