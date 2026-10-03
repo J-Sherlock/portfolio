@@ -31,10 +31,10 @@ github_username: J-Sherlock
 forminit_ID: nsbm6r42hdg
 
 collections:
-  personal_projects:
+  personal-projects:
     output: true
     permalink: /personal-projects/:name/
-  professional_projects:
+  professional-projects:
     output: true
     permalink: /professional-projects/:name/
 
